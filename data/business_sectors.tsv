@@ -1,0 +1,23 @@
+﻿#sourced from: http://www.insee.fr/fr/methodes/default.asp?page=nomenclatures/naf2008/naf2008.htm
+#code	fr	en
+agriculture	Agriculture, sylviculture et pêche	Agriculture, forestry and fishing
+mining	Industries extractives	Mining and quarrying
+manufacturing	Industrie manufacturière	Manufacturing
+energy	Production et distribution d'électricité, de gaz, de vapeur et d'air conditionné	Electricity, gas, steam and air conditioning supply
+water	Production et distribution d'eau ; assainissement, gestion des déchets et dépollution	Water supply; sewerage, waste management and remediation activities
+construction	Construction	Construction
+trade	Commerce ; réparation d'automobiles et de motocycles	Wholesale and retail trade; repair of motor vehicles and motorcycles
+transport	Transports et entreposage	Transportation and storage
+accomodation	Hébergement et restauration	Accommodation and food service activities
+information	Information et communication	Information and communication
+finance	Activités financières et d'assurance	Financial and insurance activities
+real estate	Activités immobilières	Real estate activities
+technical	Activités spécialisées, scientifiques et techniques	Professional, scientific and technical activities
+administrative	Activités de services administratifs et de soutien	Administrative and support service activities
+public	Administration publique	Public administration
+education	Enseignement	Education
+health/social	Santé humaine et action sociale	Human health and social work activities
+arts	Arts, spectacles et activités récréatives	Arts, entertainment and recreation
+other services	Autres activités de services	Other service activities
+#Activités des ménages en tant qu'employeurs ; activités indifférenciées des ménages en tant que producteurs de biens et services pour usage propre	Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use
+#Activités extra-territoriales	Activities of extraterritorial organisations and bodies

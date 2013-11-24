@@ -1,0 +1,4 @@
+﻿#ISO 4217:2008 code
+EUR
+GBP
+USD

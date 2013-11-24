@@ -1,0 +1,67 @@
+<?php
+
+/*
+ * This file is part of the Sociable package.
+ *
+ * Copyright 2013 by Sébastien Pujadas
+ *
+ * For the full copyright and licence information, please view the LICENCE
+ * file that was distributed with this source code.
+ */
+
+// Sociable configuration file template
+
+$config = new Sociable\Common\Configuration;
+
+// Mongo Document Manager
+$config->setDocumentManagerParams(
+	'DB_USER',  // customise this
+	'DB_PASSWORD',  // customise this
+	'DB_HOST',  // customise this
+	'DB_PORT',  // customise this
+	'DB_NAME',  // customise this
+	SOCIABLE_ROOT . '/model/cache',
+	'Proxies',
+	SOCIABLE_ROOT . '/model/cache',
+	'Hydrators',
+	array(
+		SOCIABLE_ROOT . '/model/Sociable', 
+		// other model directories as required
+	)
+);
+
+// Twig
+$config->setTwigParams(
+    SOCIABLE_ROOT . '/templates', // customise this
+    array(
+        'cache' => SOCIABLE_ROOT . '/templates/cache', // customise this
+        'auto_reload' => true // remove in production
+    ),
+    true // debug mode, set to false remove in production
+);
+
+// Monolog logger
+$config->setLoggerParams('Sociable', SOCIABLE_ROOT . '/sys/log/sociable.log', Monolog\Logger::WARNING); // customise this
+
+// SwiftMailer
+$config->setSmtpParams('SMTP_SERVER', SMTP_PORT, 'ssl', 'SMTP_LOGIN', 'SMTP_PASSWORD'); // customise this
+$config->setParam('emailFromAddress', 'EMAIL_FROM_ADDRESS'); // customise this
+$config->setParam('emailFromName', 'EMAIL_FROM_NAME'); // customise this
+
+// default URL
+$config->setParam('hostname', 'HOSTNAME');
+
+// locale defaults
+$config->setParam('defaultCountryCode', 'DEFAULT_COUNTRY_CODE'); // customise this e.g. 'FR', 'GB'
+$config->setParam('defaultLanguageCode', 'DEFAULT_LANGUAGE_CODE'); // customise this e.g. en
+$config->setParam('defaultCurrencyCode', 'DEFAULT_CURRENCY_CODE'); // customise this e.g. 'EUR', 'GBP'
+
+// admin singleton
+$config->setParam('adminLabel', 'ADMIN');
+
+// decorator
+$config->setParam('cssFiles', array());
+$config->setParam('title', 'A Sociable application'); // customise this
+
+// other global params as required
+// $config->setParam('PARAM_NAME', 'PARAM_VALUE');
